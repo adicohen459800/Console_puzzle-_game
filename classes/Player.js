@@ -1,17 +1,19 @@
 export default class Player {
-    constructor(name) {
+    // מכיל id, name, lowestTime במקום times[]
+    // כי עכשיו אנחנו שומרים רק את הזמן הכולל הטוב ביותר של השחקן בקובץ
+    constructor(id, name, lowestTime = null) {
+        this.id = id;
         this.name = name;
-        this.times = []; // מערך לשמירת משך הזמן לכל חידה
+        this.lowestTime = lowestTime;
+        this.times = []; // זמני המשחק הנוכחי בלבד (לא נשמר ב-DB)
     }
 
-    recordTime(start, end) {
-        const durationInSeconds = Math.round((end - start) / 1000);
-        this.times.push(durationInSeconds);
+    getTotalTime() {
+        return this.times.reduce((acc, curr) => acc + curr, 0);
     }
-
 
     showStats(isFinal = true) {
-        const totalTime = this.times.reduce((acc, curr) => acc + curr, 0);
+        const totalTime = this.getTotalTime();
         const avgTime = Math.round(totalTime / this.times.length);
 
         if (isFinal) {
@@ -26,5 +28,4 @@ export default class Player {
             console.log(`-----------------------------------`);
         }
     }
-
 }

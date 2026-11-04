@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Easy Math",
+    "taskDescription": "What is 5 + 3?",
+    "correctAnswer": "8",
+    "difficulty": "easy",
+    "timeLimit": 10,
+    "hint": "Think about basic addition..."
+  },
+  {
+    "id": 2,
+    "name": "Mystery",
+    "taskDescription": "I speak without a mouth. What am I?",
+    "correctAnswer": "echo",
+    "difficulty": "easy",
+    "timeLimit": 15,
+    "hint": "It bounces back your voice."
+  },
+  {
+    "id": 3,
+    "name": "Months of the Year",
+    "taskDescription": "Which month has 28 days?",
+    "correctAnswer": "all",
+    "difficulty": "easy",
+    "timeLimit": 12,
+    "hint": "Think carefully... do *some* months have 28 days, or do *all* of them?"
+  },
+  {
+    "id": 4,
+    "name": "The Hole",
+    "taskDescription": "What has holes in it but still holds water?",
+    "correctAnswer": "sponge",
+    "difficulty": "medium",
+    "timeLimit": 15,
+    "hint": "You use it to clean dishes or wash a car."
+  },
+  {
+    "id": 5,
+    "name": "The Steps",
+    "taskDescription": "What goes up and down but never moves?",
+    "correctAnswer": "stairs",
+    "difficulty": "medium",
+    "timeLimit": 15,
+    "hint": "You climb them to get to the second floor of a house."
+  },
+  {
+    "id": 6,
+    "name": "The Shadow",
+    "taskDescription": "I follow you everywhere, but you cannot touch me or catch me. What am I?",
+    "correctAnswer": "shadow",
+    "difficulty": "hard",
+    "timeLimit": 20,
+    "hint": "You need a light source (like the sun or a lamp) to create me."
+  },
+  {
+    "id": 7,
+    "name": "The Secret",
+    "taskDescription": "If you have me, you want to share me. If you share me, you haven't got me. What am I?",
+    "correctAnswer": "secret",
+    "difficulty": "hard",
+    "timeLimit": 25,
+    "hint": "Keep it to yourself, or else everyone will know."
+  }
+]
